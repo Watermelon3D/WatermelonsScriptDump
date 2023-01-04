@@ -1,4 +1,4 @@
--- made by watermelon3D
+--made by watermelon3D
 
 local UI = Instance.new("ScreenGui")
 local UI_2 = Instance.new("Frame")
@@ -6,10 +6,15 @@ local BackGround = Instance.new("Frame")
 local Container = Instance.new("Frame")
 local Padding = Instance.new("UIPadding")
 local UIGridLayout = Instance.new("UIGridLayout")
-local CellBDestroy = Instance.new("TextButton")
+local AKGiver = Instance.new("TextButton")
 local CellADestroy = Instance.new("TextButton")
+local CellBDestroy = Instance.new("TextButton")
 local CrudeHam = Instance.new("TextButton")
-local Remington = Instance.new("TextButton")
+local GateOpen = Instance.new("TextButton")
+local RemingtonGiver = Instance.new("TextButton")
+local Inmatesteam = Instance.new("TextButton")
+local GuardsTeam = Instance.new("TextButton")
+local RemingtonGiver_2 = Instance.new("TextButton")
 local UnderLine = Instance.new("Frame")
 local Toggle = Instance.new("TextButton")
 local Window = Instance.new("TextLabel")
@@ -39,7 +44,7 @@ Container.Parent = UI_2
 Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Container.BorderSizePixel = 0
 Container.Position = UDim2.new(0, 0, 1, 0)
-Container.Size = UDim2.new(0, 190, 0, 30)
+Container.Size = UDim2.new(0, 696, 0, 354)
 
 Padding.Name = "Padding"
 Padding.Parent = Container
@@ -48,27 +53,30 @@ Padding.PaddingLeft = UDim.new(0, 5)
 Padding.PaddingTop = UDim.new(0, 5)
 
 UIGridLayout.Parent = Container
+UIGridLayout.FillDirection = Enum.FillDirection.Vertical
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.CellSize = UDim2.new(0, 124, 0, 34)
+UIGridLayout.FillDirectionMaxCells = 9
+UIGridLayout.StartCorner = Enum.StartCorner.TopRight
 
-CellBDestroy.Name = "CellBDestroy"
-CellBDestroy.Parent = Container
-CellBDestroy.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-CellBDestroy.BorderSizePixel = 0
-CellBDestroy.Size = UDim2.new(0, 200, 0, 50)
-CellBDestroy.Font = Enum.Font.SourceSansBold
-CellBDestroy.Text = "Destroy Cellblock B"
-CellBDestroy.TextColor3 = Color3.fromRGB(255, 28, 89)
-CellBDestroy.TextScaled = true
-CellBDestroy.TextSize = 14.000
-CellBDestroy.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
-CellBDestroy.TextWrapped = true
+AKGiver.Name = "AKGiver"
+AKGiver.Parent = Container
+AKGiver.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+AKGiver.BorderSizePixel = 0
+AKGiver.Size = UDim2.new(0, 666, 0, 34)
+AKGiver.Font = Enum.Font.SourceSansBold
+AKGiver.Text = "AK-47"
+AKGiver.TextColor3 = Color3.fromRGB(255, 28, 89)
+AKGiver.TextSize = 14.000
+AKGiver.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+AKGiver.TextWrapped = true
 
 CellADestroy.Name = "CellADestroy"
 CellADestroy.Parent = Container
 CellADestroy.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
 CellADestroy.BorderSizePixel = 0
-CellADestroy.Size = UDim2.new(0, 200, 0, 50)
+CellADestroy.Position = UDim2.new(0, 0, 1.69565213, 0)
+CellADestroy.Size = UDim2.new(0, 666, 0, 34)
 CellADestroy.Font = Enum.Font.SourceSansBold
 CellADestroy.Text = "Destroy Cellblock A"
 CellADestroy.TextColor3 = Color3.fromRGB(255, 28, 89)
@@ -77,11 +85,26 @@ CellADestroy.TextSize = 14.000
 CellADestroy.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
 CellADestroy.TextWrapped = true
 
+CellBDestroy.Name = "CellBDestroy"
+CellBDestroy.Parent = Container
+CellBDestroy.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+CellBDestroy.BorderSizePixel = 0
+CellBDestroy.Position = UDim2.new(0, 0, 3.39130425, 0)
+CellBDestroy.Size = UDim2.new(0, 666, 0, 34)
+CellBDestroy.Font = Enum.Font.SourceSansBold
+CellBDestroy.Text = "Destroy Cellblock B"
+CellBDestroy.TextColor3 = Color3.fromRGB(255, 28, 89)
+CellBDestroy.TextScaled = true
+CellBDestroy.TextSize = 14.000
+CellBDestroy.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+CellBDestroy.TextWrapped = true
+
 CrudeHam.Name = "CrudeHam"
 CrudeHam.Parent = Container
 CrudeHam.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
 CrudeHam.BorderSizePixel = 0
-CrudeHam.Size = UDim2.new(0, 200, 0, 50)
+CrudeHam.Position = UDim2.new(0, 0, 5.0869565, 0)
+CrudeHam.Size = UDim2.new(0, 666, 0, 34)
 CrudeHam.Font = Enum.Font.SourceSansBold
 CrudeHam.Text = "Crude Hammer & Knife"
 CrudeHam.TextColor3 = Color3.fromRGB(255, 28, 89)
@@ -89,17 +112,70 @@ CrudeHam.TextSize = 14.000
 CrudeHam.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
 CrudeHam.TextWrapped = true
 
-Remington.Name = "Remington"
-Remington.Parent = Container
-Remington.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-Remington.BorderSizePixel = 0
-Remington.Size = UDim2.new(0, 200, 0, 50)
-Remington.Font = Enum.Font.SourceSansBold
-Remington.Text = "Remington"
-Remington.TextColor3 = Color3.fromRGB(255, 28, 89)
-Remington.TextSize = 14.000
-Remington.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
-Remington.TextWrapped = true
+GateOpen.Name = "GateOpen"
+GateOpen.Parent = Container
+GateOpen.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+GateOpen.BorderSizePixel = 0
+GateOpen.Position = UDim2.new(0, 0, 6.78260851, 0)
+GateOpen.Size = UDim2.new(0, 666, 0, 34)
+GateOpen.Font = Enum.Font.SourceSansBold
+GateOpen.Text = "Open Prison Gate"
+GateOpen.TextColor3 = Color3.fromRGB(255, 28, 89)
+GateOpen.TextSize = 14.000
+GateOpen.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+GateOpen.TextWrapped = true
+
+RemingtonGiver.Name = "RemingtonGiver"
+RemingtonGiver.Parent = Container
+RemingtonGiver.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+RemingtonGiver.BorderSizePixel = 0
+RemingtonGiver.Position = UDim2.new(0, 0, 8.47826099, 0)
+RemingtonGiver.Size = UDim2.new(0, 666, 0, 34)
+RemingtonGiver.Font = Enum.Font.SourceSansBold
+RemingtonGiver.Text = "Remington"
+RemingtonGiver.TextColor3 = Color3.fromRGB(255, 28, 89)
+RemingtonGiver.TextSize = 14.000
+RemingtonGiver.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+RemingtonGiver.TextWrapped = true
+
+Inmatesteam.Name = "Inmates team"
+Inmatesteam.Parent = Container
+Inmatesteam.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Inmatesteam.BorderSizePixel = 0
+Inmatesteam.Position = UDim2.new(0, 0, 10.173913, 0)
+Inmatesteam.Size = UDim2.new(0, 666, 0, 34)
+Inmatesteam.Font = Enum.Font.SourceSansBold
+Inmatesteam.Text = "Inmates Team"
+Inmatesteam.TextColor3 = Color3.fromRGB(255, 28, 89)
+Inmatesteam.TextSize = 14.000
+Inmatesteam.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+Inmatesteam.TextWrapped = true
+
+GuardsTeam.Name = "GuardsTeam"
+GuardsTeam.Parent = Container
+GuardsTeam.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+GuardsTeam.BorderSizePixel = 0
+GuardsTeam.Position = UDim2.new(0, 0, 11.869565, 0)
+GuardsTeam.Size = UDim2.new(0, 666, 0, 34)
+GuardsTeam.Font = Enum.Font.SourceSansBold
+GuardsTeam.Text = "Guards Team"
+GuardsTeam.TextColor3 = Color3.fromRGB(255, 28, 89)
+GuardsTeam.TextSize = 14.000
+GuardsTeam.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+GuardsTeam.TextWrapped = true
+
+RemingtonGiver_2.Name = "RemingtonGiver"
+RemingtonGiver_2.Parent = Container
+RemingtonGiver_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+RemingtonGiver_2.BorderSizePixel = 0
+RemingtonGiver_2.Position = UDim2.new(0, 0, 8.47826099, 0)
+RemingtonGiver_2.Size = UDim2.new(0, 666, 0, 34)
+RemingtonGiver_2.Font = Enum.Font.SourceSansBold
+RemingtonGiver_2.Text = "Remington"
+RemingtonGiver_2.TextColor3 = Color3.fromRGB(255, 28, 89)
+RemingtonGiver_2.TextSize = 14.000
+RemingtonGiver_2.TextStrokeColor3 = Color3.fromRGB(136, 152, 99)
+RemingtonGiver_2.TextWrapped = true
 
 UnderLine.Name = "UnderLine"
 UnderLine.Parent = UI_2
@@ -134,19 +210,19 @@ Window.TextSize = 17.000
 
 
 
-local function HGEFDEB_fake_script() 
-	local script = Instance.new('Script', CellBDestroy)
+local function DOOGV_fake_script() 
+	local script = Instance.new('Script', AKGiver)
 
 	function Click(mouse)
-		
-		game.Workspace.Prison_Cellblock.Cells_B:Destroy()
-		
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
 	end
 	
 	script.Parent.MouseButton1Click:Connect(Click)
 end
-coroutine.wrap(HGEFDEB_fake_script)()
-local function WUCVTCQ_fake_script() 
+coroutine.wrap(DOOGV_fake_script)()
+local function HIQTSI_fake_script() 
 	local script = Instance.new('Script', CellADestroy)
 
 	function Click(mouse)
@@ -157,8 +233,20 @@ local function WUCVTCQ_fake_script()
 	
 	script.Parent.MouseButton1Click:Connect(Click)
 end
-coroutine.wrap(WUCVTCQ_fake_script)()
-local function ZWOF_fake_script()  
+coroutine.wrap(HIQTSI_fake_script)()
+local function IVHN_fake_script() 
+	local script = Instance.new('Script', CellBDestroy)
+
+	function Click(mouse)
+		
+		game.Workspace.Prison_Cellblock.Cells_B:Destroy()
+		
+	end
+	
+	script.Parent.MouseButton1Click:Connect(Click)
+end
+coroutine.wrap(IVHN_fake_script)()
+local function ZUTQD_fake_script() 
 	local script = Instance.new('Script', CrudeHam)
 
 	function Click(mouse)
@@ -174,18 +262,72 @@ local function ZWOF_fake_script()
 	
 	script.Parent.MouseButton1Click:Connect(Click)
 end
-coroutine.wrap(ZWOF_fake_script)()
-local function LTOIH_fake_script() 
-	local script = Instance.new('Script', Remington)
+coroutine.wrap(ZUTQD_fake_script)()
+local function KHVSC_fake_script()
+	local script = Instance.new('Script', GateOpen)
 
 	function Click(mouse)
-		game.Workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].buttons["Prison Gate"]["Prison Gate"]
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+	
 	end
 	
 	script.Parent.MouseButton1Click:Connect(Click)
 end
-coroutine.wrap(LTOIH_fake_script)()
-local function KVTBGR_fake_script()  
+coroutine.wrap(KHVSC_fake_script)()
+local function DYHZXQK_fake_script()
+	local script = Instance.new('Script', RemingtonGiver)
+
+	function Click(mouse)
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+	
+	end
+	
+	script.Parent.MouseButton1Click:Connect(Click)
+end
+coroutine.wrap(DYHZXQK_fake_script)()
+local function NAJFJX_fake_script() 
+	local script = Instance.new('Script', Inmatesteam)
+
+	function Click(mouse)
+		local A_1 = "Bright orange"
+		local Event = game:GetService("Workspace").Remote.TeamEvent
+		Event:FireServer(A_1)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(Click)
+end
+coroutine.wrap(NAJFJX_fake_script)()
+local function ZBKIF_fake_script() 
+	local script = Instance.new('Script', GuardsTeam)
+
+	function Click(mouse)
+		local A_1 = "Bright blue"
+		local Event = game:GetService("Workspace").Remote.TeamEvent
+		Event:FireServer(A_1)
+	
+	end
+	
+	script.Parent.MouseButton1Click:Connect(Click)
+end
+coroutine.wrap(ZBKIF_fake_script)()
+local function BTCLKN_fake_script() 
+	local script = Instance.new('Script', RemingtonGiver_2)
+
+	function Click(mouse)
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+	
+	end
+	
+	script.Parent.MouseButton1Click:Connect(Click)
+end
+coroutine.wrap(BTCLKN_fake_script)()
+local function YWOQ_fake_script()  
 	local script = Instance.new('LocalScript', Toggle)
 
 	local back = script.Parent.Parent.BackGround
@@ -216,8 +358,8 @@ local function KVTBGR_fake_script()
 		end)
 	
 end
-coroutine.wrap(KVTBGR_fake_script)()
-local function SZSHB_fake_script()  
+coroutine.wrap(YWOQ_fake_script)()
+local function LBQCK_fake_script()
 	local script = Instance.new('LocalScript', UI_2)
 
 	local dragger = {}; 
@@ -227,7 +369,7 @@ local function SZSHB_fake_script()
 		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
 		local inputService = game:GetService('UserInputService');
 		local heartbeat = game:GetService("RunService").Heartbeat;
-		-- // credits to Ririchi / Inori for this cute drag function :)
+		
 		function dragger.new(frame)
 		    local s, event = pcall(function()
 		    	return frame.MouseEnter
@@ -264,4 +406,4 @@ local function SZSHB_fake_script()
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(SZSHB_fake_script)()
+coroutine.wrap(LBQCK_fake_script)()
