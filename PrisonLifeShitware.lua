@@ -19,7 +19,7 @@ local Window = Rayfield:CreateWindow({
 		Title = "ShitWare",
 		Subtitle = "Key System",
 		Note = "Join the discord (discord.gg/shitware.xyz)",
-		FileName = "SiriusKey",
+		FileName = "ShitwareKey",
 		SaveKey = true,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
 		Key = "shitware.wtf"
@@ -61,7 +61,7 @@ local Window = Rayfield:CreateWindow({
 	end,
 })
 	local Button = Tab:CreateButton({
-		Name = "Button Example",
+		Name = "All Melees",
 		Callback = function()
 			local weapons = {"Crude Knife", "Hammer"}
 			for i, v in pairs(game.Workspace["Prison_ITEMS"].single:GetChildren()) do
